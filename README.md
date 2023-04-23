@@ -1,5 +1,5 @@
-#Terms of Service
-###Terms of service for the Amadeus bot.
+# Terms of Service
+### Terms of service for the Amadeus bot.
 
 - Conditions
 General conditions regarding Amadeus bot are under this topic.

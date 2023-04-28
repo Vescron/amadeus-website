@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>&nbsp</title>
+    <link rel="icon" type="image/x-icon" href="#">
+    <script src="https://kit.fontawesome.com/f3b918bb77.js" crossorigin="anonymous"></script>
+    <script defer src="observer.js"></script>
+</head>
+<style>
+    html{
+        background-color: #B96950;
+        font-family: Quicksand,sans-serif;
+        height: 100%;
+    }
+    body{
+        display: grid;
+        place-content: center;
+        height: 100%;
+    }
+    #Main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        padding: 100px;
+        border: 1px solid white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 4px white;
+        transition: all 4s;
+        background-color: #b95050;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    li{
+        display: inline;
+        padding-inline: 5px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .button{
+        padding-inline: 20px;
+        padding-block: 10px;
+        border: 1px solid white;
+        border-radius: 20px;
+        transition: all 1s;
+    }
+    .button:hover{
+        border-color: white;
+        box-shadow: 0px 0px 1px white;
+    }
+    hr{
+        width: 100%;
+    }
+    #Home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #yan{
+        width: 25vh;
+        margin: 2vh;
+        border-radius: 20%;
+        place-self: center;
+    }
+    h1{
+        font-weight: 400;
+        margin: 20px;
+        transform: translateY(100%);
+        opacity: 0;
+        filter: blur(5px);
+        animation: fade-up 2s forwards;
+    }
+    #miya:hover{
+        box-shadow: 0px 0px 25px white;
+    }
+    #miya{
+        width: 65vh;
+        place-self: center;
+        border-radius: 30px 30px 30px 30px;
+        transition: all 2s;
+        margin-block: 9vh;
+        /* transform: translateY(10%);
+        filter: blur(10px);
+        opacity: 0;
+        animation: fade-up 2s 1s forwards; */
+    }
+    #cheese{
+        padding: 15vh;
+        border-block: 2.5px dotted;
+        place-self: center;
+        opacity: 0;
+        filter: blur(20px);
+        transform: translateY(0px);
+        animation: fade-up 2s 1s forwards;
+    }
+    #About{
+        display: none;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    #About h1{
+        text-align: center;
+    }
+    #About li{
+        display: list-item;
+        padding-inline: 0;
+    }
+    p{
+        font-size: 1.3rem;
+        transform: translateY(-100%);
+        opacity: 0;
+        filter: blur(5px);
+        animation: fade-up 2s 1s forwards;
+        animation: fade-up 2s 1s forwards;
+    }
+    #Contact{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        transform: translateY(-100%);
+        font-weight: 300;
+        opacity: 0;
+        filter: blur(5px);
+        animation: fade-up 2s 1s forwards;
+    }
+    .hidden {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(-100%);
+    }
+
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(0);
+    }
+    @keyframes fade-up {
+        to{
+            opacity: 1;
+            filter: blur(0px);
+            transform: translateY(0px);
+        } 
+    }
+    @media screen and (max-width:800px) {
+        h1{
+            font-size: 6vw;
+            margin-inline: 0;
+        }    
+        #cheese{
+            padding: 20vw;
+        }
+        #miya{
+            width: 75vw;
+        }
+        a{
+            font-size: 3.8vw;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+            
+    }
+</style>
+<body>
+    <div id="Main">
+        <div id="Home">
+            <img id="yan" src="https://cdn.discordapp.com/avatars/695868197726847007/50d3208face9250b1aaebe41092990c0.png?size=1024" alt="deus">
+            <h1>Amadeus</h1>
+            <p>A general purpose discord bot.</p>
+        </div>
+        <div id="About">
+            <h1>Terms of Service</h1>
+            <h2>> Conditions</h2>
+            <ol>
+            <li> Our terms and conditions apply to each and every user of Amadeus Bot.</li>
+            <li> By adding Amadeus in your server, you agree to these terms of service and the future terms which we may add after a notice.</li>
+            </ol>    
+            <h2>> Terms of Use</h2>
+            <ol>
+            <li> Intentional command spam or attempts to crash the bot should not be made.</li>
+            <li> Amadeus should not be used in Bot spam servers which cause command spam.</li>
+            <li> Amadeus Team reserves the rights to prohibit any server or user from using Amadeus.</li>
+            <li> The client is responsible for any violation caused by them.</li>
+            <li> We have the rights to update terms of service anytime with a notice in the support server.</li>
+            </ol>
+        </div>
+        <div id="Contact">
+            <h1>Contact</h1>
+            <h2><a href="https://github.com/Vescron/"><i class="fab fa-github"></i> Vescron</a></h2>
+            <h2><a href="https://twitter.com/Sibtain_V"><i class="fab fa-twitter"></i> @Sibtain_V</a></h2>
+            <h2><i class="fab fa-discord"></i> Sibtain#2776</h2>
+        </div>
+        <hr>
+        <footer>
+            <ul>
+                <li>
+                    <a class="button" href="javascript:Home()">Home <i class="fa-solid fa-house-chimney fa-sm"></i></a>
+                </li>
+                <li>
+                    <a class="button" href="javascript:About()">Terms <i class="fa-solid fa-user fa-sm"></i></a>
+                    
+                </li>
+                <li>
+                    <a class="button" href="javascript:Contact()">Contact <i class="fa-solid fa-address-book fa-sm"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+<script>
+    var home = document.getElementById("Home");
+    var about = document.getElementById("About");
+    var contact = document.getElementById("Contact");
+    function Home() {
+        if (home.style.display === "none") {
+            home.style.display = "flex";
+        }
+        about.style.display = "none";
+        contact.style.display = "none";
+    }
+    function About() {
+        about.style.display = "flex";
+        home.style.display = "none";
+        contact.style.display = "none";
+    } 
+    function Contact() {
+        contact.style.display = "flex";
+        home.style.display = "none";
+        about.style.display = "none";
+    }
+</script>
+</html>

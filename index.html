@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
-    <title>&nbsp</title>
+    <title>Amadeus</title>
     <link rel="icon" type="image/x-icon" href="#">
     <script src="https://kit.fontawesome.com/f3b918bb77.js" crossorigin="anonymous"></script>
-    <script defer src="observer.js"></script>
+    <!-- <script defer src="observer.js"></script> -->
 </head>
 <style>
     html{
@@ -57,6 +57,7 @@
         box-shadow: 0px 0px 1px white;
     }
     hr{
+        color: white;
         width: 100%;
     }
     #Home{
@@ -77,29 +78,6 @@
         opacity: 0;
         filter: blur(5px);
         animation: fade-up 2s forwards;
-    }
-    #miya:hover{
-        box-shadow: 0px 0px 25px white;
-    }
-    #miya{
-        width: 65vh;
-        place-self: center;
-        border-radius: 30px 30px 30px 30px;
-        transition: all 2s;
-        margin-block: 9vh;
-        /* transform: translateY(10%);
-        filter: blur(10px);
-        opacity: 0;
-        animation: fade-up 2s 1s forwards; */
-    }
-    #cheese{
-        padding: 15vh;
-        border-block: 2.5px dotted;
-        place-self: center;
-        opacity: 0;
-        filter: blur(20px);
-        transform: translateY(0px);
-        animation: fade-up 2s 1s forwards;
     }
     #About{
         display: none;
@@ -152,16 +130,39 @@
         } 
     }
     @media screen and (max-width:800px) {
+        #Main{
+            padding: 0;
+        }
+        hr{
+            width: 95%;
+        }
+        .button{
+            padding-inline: 20px;
+            padding-block: 10px;
+            border: 1px white;
+            border-style: outset;
+            border-radius: 20px;
+            transition: all 1s;
+        }
+        #About li{
+            font-size: 0.7rem;
+        }
+        #About h2{
+            margin: 0;
+        }
+        #About a{
+            text-align: right;
+            font-weight: 500;
+            padding-right: 1rem;
+            font-size: 0.7rem;
+        }
+        #Contact a{
+            font-size: 6vw;
+        }
         h1{
             font-size: 6vw;
             margin-inline: 0;
         }    
-        #cheese{
-            padding: 20vw;
-        }
-        #miya{
-            width: 75vw;
-        }
         a{
             font-size: 3.8vw;
         }
@@ -200,6 +201,7 @@
             <h2><a href="https://github.com/Vescron/"><i class="fab fa-github"></i> Vescron</a></h2>
             <h2><a href="https://twitter.com/Sibtain_V"><i class="fab fa-twitter"></i> @Sibtain_V</a></h2>
             <h2><i class="fab fa-discord"></i> Sibtain#2776</h2>
+            <h2><a href="https://discord.com/api/oauth2/authorize?client_id=695868197726847007&permissions=36988929&scope=bot"><i class="fa-solid fa-link"></i> Invite Amadeus</h2></a>
         </div>
         <hr>
         <footer>
